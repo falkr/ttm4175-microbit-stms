@@ -79,7 +79,7 @@ class StateMachine:
                     self.state = next_state
             sleep(100)
 
-class Sanitizer(StateMachine):
+class Dispenser(StateMachine):
     
     def initial_transition(self, timers):
         # define your initial transition here
@@ -87,5 +87,5 @@ class Sanitizer(StateMachine):
     def transition(self, state, event, timers):
         # define your transitions here
 
-stm = Sanitizer()
+stm = Dispenser()
 stm.run()
